@@ -73,6 +73,7 @@ export const ValueInputButton = styled.button`
 `;
 export const RemoveItemBtn = styled.button`
     border: none;
+    font-weight: bolder;
     background: none;
     color: red;
     position: absolute;
