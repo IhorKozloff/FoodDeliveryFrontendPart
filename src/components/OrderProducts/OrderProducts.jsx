@@ -1,6 +1,6 @@
-import { OrderList, OrderListItem, DescritionWrapper, ItemOrderTittle, ItemOrderPrice, ValueInputWrapper, ValueInput, ValueInputButtonSet, ValueInputButton} from "./OrderProducts.styled"
+import { OrderList, RemoveItemBtn, OrderListItem, DescritionWrapper, ItemOrderTittle, ItemOrderPrice, ValueInputWrapper, ValueInput, ValueInputButtonSet, ValueInputButton} from "./OrderProducts.styled"
 
-export const OrderProducts = ({order, onOrderInputChange}) => {
+export const OrderProducts = ({order, setOrder, onOrderInputChange}) => {
 
 
     return (
@@ -10,6 +10,7 @@ export const OrderProducts = ({order, onOrderInputChange}) => {
                 {order && order.map(item => {
                     return(
                         <OrderListItem key={item.id}>
+                            
                             <img src={`http://localhost:3001//${item.imageUrl}`} alt="fast-food" width="340" height="220"/>
                             <DescritionWrapper>
                                 <ItemOrderTittle>{item.name}</ItemOrderTittle>
@@ -29,6 +30,9 @@ export const OrderProducts = ({order, onOrderInputChange}) => {
                                         {item.count > 1 && <ValueInputButton type="button" appointment="decrement" onClick={() => {
                                             onOrderInputChange("decrement", item.id)
                                         }}>-</ValueInputButton>}
+                                        <RemoveItemBtn type="button" onClick={() => {
+                                setOrder(order.filter(itemInOrder => itemInOrder.id !== item.id))
+                            }}>Remove</RemoveItemBtn>
                                     </ValueInputButtonSet>
                                     
                                 </ValueInputWrapper>

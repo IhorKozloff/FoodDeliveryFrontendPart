@@ -71,3 +71,11 @@ export const ValueInputButton = styled.button`
     border-radius: 5px;
     background: ${props => props.appointment === "decrement" ? "rgb(227, 6, 19)" : "green"};
 `;
+export const RemoveItemBtn = styled.button`
+    border: none;
+    background: none;
+    color: red;
+    position: absolute;
+    top: -200px;
+    right: -10px;
+`;

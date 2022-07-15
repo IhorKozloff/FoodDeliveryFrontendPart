@@ -85,7 +85,7 @@ export default function OrderPage ({order, setOrder, onOrderInputChange}) {
 
                     </UserDataWrapper>
 
-                    <OrderProducts order={order} onOrderInputChange={onOrderInputChange}/>
+                    <OrderProducts order={order} setOrder={setOrder} onOrderInputChange={onOrderInputChange}/>
 
                     
 
