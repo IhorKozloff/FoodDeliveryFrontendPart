@@ -75,8 +75,12 @@ export const RemoveItemBtn = styled.button`
     border: none;
     font-weight: bolder;
     background: none;
-    color: red;
+    color: rgb(227, 6, 19);
     position: absolute;
     top: -200px;
     right: -10px;
+    transition: color 500ms ease;
+    &:hover {
+        color: rgb(168, 5, 14);
+    }
 `;

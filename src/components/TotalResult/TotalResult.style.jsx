@@ -14,7 +14,10 @@ export const ConfirmOrderButton = styled.button`
     border: none;
     border-radius: 5px;
     background: rgb(227, 6, 19);
+    transition: background 500ms ease;
+    transition: color 500ms ease;
     &:hover {
+        background: rgb(168, 5, 14);
         color: white;
     }
 `;
