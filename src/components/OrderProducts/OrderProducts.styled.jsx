@@ -22,6 +22,8 @@ export const OrderListItem = styled.li`
     align-items: flex-end;
     background-color: white;
 `;
+
+
 export const DescritionWrapper = styled.div`
     display: flex;
     flex-direction: column;

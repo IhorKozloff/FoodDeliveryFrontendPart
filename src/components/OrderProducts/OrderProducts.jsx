@@ -1,5 +1,5 @@
 import { OrderList, RemoveItemBtn, OrderListItem, DescritionWrapper, ItemOrderTittle, ItemOrderPrice, ValueInputWrapper, ValueInput, ValueInputButtonSet, ValueInputButton} from "./OrderProducts.styled"
-
+import { ImageWrapper } from "components/GlobalStyles";
 export const OrderProducts = ({order, setOrder, onOrderInputChange}) => {
 
 
@@ -10,8 +10,11 @@ export const OrderProducts = ({order, setOrder, onOrderInputChange}) => {
                 {order && order.map(item => {
                     return(
                         <OrderListItem key={item.id}>
+                            <ImageWrapper>
+                                <img src={`https://food-delivery-backend-project.herokuapp.com/${item.imageUrl}`} alt="fast-food" height="100%"/>
+                            </ImageWrapper>
                             
-                            <img src={`https://food-delivery-backend-project.herokuapp.com/${item.imageUrl}`} alt="fast-food" width="340" height="220"/>
+
                             <DescritionWrapper>
                                 <ItemOrderTittle>{item.name}</ItemOrderTittle>
                                 <ItemOrderPrice>Price: {item.totalPrice}$</ItemOrderPrice>

@@ -1,4 +1,5 @@
 import { SplashScreen, ShopProductsWrapper, ProductsLisWrapper, ProductsList, ProductsItem, OrderButton, Description, TextWrapper, MealPrice  } from "./ShopProducts.styled"
+import { ImageWrapper } from "components/GlobalStyles";
 
 export const ShopProducts = ({productionData, orderCreator}) => {
 
@@ -18,7 +19,10 @@ export const ShopProducts = ({productionData, orderCreator}) => {
                         productionData.products.map(({name, price, image, id}) => {
                             return (
                                 <ProductsItem key={id}>
-                                    <img className="meal-image" src={`https://food-delivery-backend-project.herokuapp.com//${image}`} alt="fast-food" width="340" height="220"/>
+                                    <ImageWrapper>
+                                        <img className="meal-image" src={`https://food-delivery-backend-project.herokuapp.com//${image}`} alt="fast-food" height="100%"/>
+                                    </ImageWrapper>
+                                    
 
                                     <Description>
                                         <TextWrapper>

@@ -17,6 +17,7 @@ export const SplashScreen = styled.div`
     overflow: hidden;
     border-radius: 10px;
 `;
+
 export const ProductsLisWrapper = styled.div`
 box-sizing: border-box;
 height: 100%;
@@ -37,6 +38,7 @@ export const ProductsItem = styled.li`
     overflow: hidden;
     margin-bottom: 20px;
 `;
+
 export const Description = styled.div`
     padding: 0 10px 10px 10px;
    display: flex;

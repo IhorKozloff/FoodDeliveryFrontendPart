@@ -16,3 +16,10 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     color: white;
 `;
+export const ImageWrapper = styled.div`
+    width: 330px;
+    height: 220px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+`;
