@@ -4,7 +4,7 @@ import mainImg from '../../img/main-background.jpg';
 export const ShopProductsWrapper = styled.div`
     width: 100%;
     height: 80vh;
-    background-image: url('http://localhost:3001//${props => props.image}');
+    background-image: url('https://food-delivery-backend-project.herokuapp.com/${props => props.image}');
     border-radius: 10px;
 
 `;

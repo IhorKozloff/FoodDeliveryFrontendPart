@@ -11,7 +11,7 @@ export const OrderProducts = ({order, setOrder, onOrderInputChange}) => {
                     return(
                         <OrderListItem key={item.id}>
                             
-                            <img src={`http://localhost:3001//${item.imageUrl}`} alt="fast-food" width="340" height="220"/>
+                            <img src={`https://food-delivery-backend-project.herokuapp.com/${item.imageUrl}`} alt="fast-food" width="340" height="220"/>
                             <DescritionWrapper>
                                 <ItemOrderTittle>{item.name}</ItemOrderTittle>
                                 <ItemOrderPrice>Price: {item.totalPrice}$</ItemOrderPrice>

@@ -18,7 +18,7 @@ export const ShopProducts = ({productionData, orderCreator}) => {
                         productionData.products.map(({name, price, image, id}) => {
                             return (
                                 <ProductsItem key={id}>
-                                    <img className="meal-image" src={`http://localhost:3001//${image}`} alt="fast-food" width="340" height="220"/>
+                                    <img className="meal-image" src={`https://food-delivery-backend-project.herokuapp.com//${image}`} alt="fast-food" width="340" height="220"/>
 
                                     <Description>
                                         <TextWrapper>
