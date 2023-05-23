@@ -20,7 +20,7 @@ export const ShopProducts = ({productionData, orderCreator}) => {
                             return (
                                 <ProductsItem key={id}>
                                     <ImageWrapper>
-                                        <img className="meal-image" src={`https://food-delivery-backend-project.herokuapp.com//${image}`} alt="fast-food" height="100%"/>
+                                        <img className="meal-image" src={`https://fooddeliveryserver-vcce.onrender.com/${image}`} alt="fast-food" height="100%"/>
                                     </ImageWrapper>
                                     
 
